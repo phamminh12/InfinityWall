@@ -1,1 +1,37 @@
-<a href="mitsumitsu-dev://search">click link</a>
+<button class="gradient-btn">
+  <a href="mitsumitsu-dev://search">Click Link</a>
+</button>
+
+<style>
+  .gradient-btn {
+    /* Make it bigger */
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    
+    /* Make it pretty */
+    background: linear-gradient(45deg, #FF512F, #DD2476); /* Red/Pink Gradient */
+    border: none;
+    border-radius: 50px; /* Fully rounded pill shape */
+    box-shadow: 0 4px 15px rgba(221, 36, 118, 0.4);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  /* Style the link text inside */
+  .gradient-btn a {
+    text-decoration: none; /* Remove underline */
+    color: white;          /* White text */
+    font-family: sans-serif;
+  }
+
+  /* Hover Effects */
+  .gradient-btn:hover {
+    transform: translateY(-3px); /* Moves up slightly */
+    box-shadow: 0 6px 20px rgba(221, 36, 118, 0.6);
+  }
+
+  .gradient-btn:active {
+    transform: translateY(-1px);
+  }
+</style>
