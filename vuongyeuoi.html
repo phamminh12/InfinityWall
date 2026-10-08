@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chúc Mừng Sinh Nhật Trần Hữu Vượng 🎂</title>
+  <meta name="description" content="Trang chúc mừng sinh nhật Trần Hữu Vượng" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="birthday_vuong/style.css" />
+</head>
+<body>
+
+<!-- Petal canvas for interactive explosion effect -->
+<canvas id="petal-canvas"></canvas>
+
+<!-- ══════════════════════════════════════
+     HERO – Fullscreen
+══════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="confetti-wrap" id="confetti"></div>
+
+  <div class="hero-balloons" aria-hidden="true">🎈🎈<br>🎈</div>
+  <div class="hero-cake"     aria-hidden="true">🎂</div>
+  <div class="happy-badge"   aria-hidden="true"><span>Happy</span><span>Birthday</span><span>🎉</span></div>
+
+  <div class="hero-content">
+    <div class="hero-sub">🎉 Hôm nay là Ngày Đặc Biệt 🎉</div>
+    <h1 class="hero-main-title">Chúc Mừng Sinh Nhật</h1>
+    <div class="hero-name">Trần Hữu Vượng</div>
+    <p class="hero-desc">
+      Chúc bạn luôn vui vẻ, mạnh khỏe và gặp thật nhiều<br>may mắn trong tuổi mới!
+    </p>
+
+    <!-- ▶ Circular Play button -->
+    <div class="play-btn-wrapper">
+      <button class="play-btn" id="play-btn" aria-label="Xem kỷ niệm dạng video">
+        <span class="play-ripple"></span>
+        <span class="play-ripple r2"></span>
+        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+      </button>
+      <div class="play-label">▶ Xem kỷ niệm</div>
+    </div>
+
+    <!-- Poem at the bottom -->
+    <div class="poem-wrapper">
+      <div class="poem-stanza">
+        Hai ba tuổi, tóc còn xanh gió lộng,<br>
+        Chưa hết yêu, đã vội bước quân hành.<br>
+        Có một bóng người đi qua mùa mộng,<br>
+        Để tim tôi còn mãi một khoảng dành.
+      </div>
+      <div class="poem-stanza">
+        Thu trước ngõ vàng hoe màu lưu luyến,<br>
+        Lá trên cành như cũng biết chia phôi.<br>
+        Đời rộng quá mà tình thì chưa trọn,<br>
+        Hai ba tuổi... thương một người, thế thôi.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SLIDESHOW VIDEO PLAYER OVERLAY
+══════════════════════════════════════ -->
+<div class="slideshow" id="slideshow" aria-hidden="true">
+
+  <!-- Top progress bar -->
+  <div class="sl-progress-wrap">
+    <div class="sl-progress-bar" id="sl-progress"></div>
+  </div>
+
+  <!-- Close button (X) -->
+  <button class="sl-close" id="sl-close" aria-label="Đóng video">✕</button>
+
+  <!-- Counter (e.g. 1 / 6) -->
+  <div class="sl-counter" id="sl-counter">1 / 6</div>
+
+  <!-- Slides container -->
+  <div class="sl-viewport">
+    <div class="sl-track" id="sl-track"></div>
+  </div>
+
+  <!-- Dot indicators -->
+  <div class="sl-dots" id="sl-dots"></div>
+
+  <!-- Caption text overlay -->
+  <div class="sl-caption" id="sl-caption">
+    <div class="sl-caption-title" id="sl-cap-title"></div>
+    <div class="sl-caption-sub"   id="sl-cap-sub"></div>
+  </div>
+</div>
+
+<script src="birthday_vuong/main.js"></script>
+</body>
+</html>
